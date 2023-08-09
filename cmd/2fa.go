@@ -21,10 +21,13 @@ func main() {
 	workPath, _ := filepath.Abs(filepath.Dir(os.Args[0]))
 	
 	fileNameDB := workPath+"/OTPn.db"
+	fileNameDB = "./OTPn.db" //PARA CUANDO SE TRABAJE EN PRUEBAS
+
+	
 
 	// REVISA SI EXISTE LA BASE DE DATOS
 	if _,err:= os.Stat(fileNameDB); err != nil{
-		log.Fatal(fnc.BrightRed,"Base de Datos no existe",fnc.Reset)
+		log.Fatal(fnc.BrightRed,"Base de Datos "+fileNameDB+" no existe",fnc.Reset)
 	}
 	db := fnc.ConnectDB(fileNameDB)
 
