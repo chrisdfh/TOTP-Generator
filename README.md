@@ -2,21 +2,24 @@
 
 ## Pasos previos
 
-Instalar las dependencias utlizando `go mod download`
+Instalar las dependencias utlizando `go get`
 
 ## Ejecutar
 
 ### Usando código fuente
+
 ```go
 go run cmd/2fa.go
 ```
 
-### Utilizando el binario para linux:
+### Utilizando el binario para linux
+
 ```sh
 ./bin/2fa
 ```
 
 ### Utilizando la versión WEB
+
 Agregar el parámetro `-w` a la línea de comandos
 
 ## Establecer Clave
@@ -29,7 +32,6 @@ La tabla presenta 3 columnas, `id`, `service` y `secret`
 `id`: Número de referencia, autoincrementado
 `service`: Nombre del servicio (referencial)
 `secret`: Código utilizado para generar la contraseña OTP
-
 
 Por Ejemplo:
 | id | service | secret |
