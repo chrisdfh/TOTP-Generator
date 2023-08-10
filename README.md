@@ -29,9 +29,10 @@ En la tabla `security` de la base de datos SQLITE3, colocar la contraseña hashe
 ## Agregar elementos a la tabla TOTP
 
 La tabla presenta 3 columnas, `id`, `service` y `secret`
-`id`: Número de referencia, autoincrementado
-`service`: Nombre del servicio (referencial)
-`secret`: Código utilizado para generar la contraseña OTP
+
+- `id`: Número de referencia, autoincrementado
+- `service`: Nombre del servicio (referencial)
+- `secret`: Código utilizado para generar la contraseña OTP
 
 Por Ejemplo:
 | id | service | secret |
